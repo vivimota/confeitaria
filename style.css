@@ -1,0 +1,178 @@
+@charset "UTF-8" ;
+@import url('https://fonts.googleapis.com/css2?family=Caramel&family=Montserrat&family=Tangerine:wght@700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100%;
+    width: 98%;
+}
+
+header{
+    background-color: #DE7671;
+}
+
+#titulo{
+    padding: 10px;
+    font-family:'Tangerine', 'Caramel' , cursive;
+    color: rgba(0, 0, 0, 0.692);
+}
+
+h2{
+    text-align: center;
+    padding: 20px;
+    font-style: 'Montserrat', sans-serif;
+}
+
+p{
+    text-align: center;
+}
+
+nav{
+    width: 100%;
+    height: 40px;
+    
+}
+
+ul{
+    list-style: none;
+    float: right;
+}
+
+li{
+    display: inline;
+    float: left;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 3px;
+    background-color: #F0CAB6;
+}
+
+li>a{
+    text-decoration: none;
+    color: rgb(34, 162, 221);
+}
+
+img{
+    display: block;
+    margin: auto;
+}
+
+.carousel-caption {
+    color: rgb(250, 4, 16);
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.quemsomos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 30px;
+}
+
+.paragrafoqs>h1{
+    text-align: center;
+}
+
+.time{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+}
+
+.time>div{
+    background-color: #e3bab8;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.26);
+}
+
+
+
+.time>div>h3{
+    text-align: center;
+}
+
+.produtos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.divprodutos{
+    background-color: #F0CAB6;
+    border-radius: 3px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.281);
+}
+
+.divprodutos>p{
+    font-weight: bolder;
+}
+
+
+section{
+    border-bottom : 2px solid rgba(0, 0, 0, 0.274);
+    padding: 20px;
+}
+
+footer{
+    background-color: #DE7671;
+    height: 150px;
+}
+
+footer>p{
+    text-align: center;
+    padding: 30px;
+    color: white;
+}
+
+@media (max-width: 500px){
+    #img{
+        display: none;
+    }
+
+.time{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.time>div{
+    background-color: #e3bab8;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 5px;
+}
+
+.produtos{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.produtos>div{
+    background-color: #F0CAB6;
+    width: 200px;
+    height: 200px;
+    margin: 5px;
+}
+
+footer{
+    background-color: #DE7671;
+    height: 500px;
+    display: table;
+    width: 100%;
+}
+
+footer>p{
+    display: table-cell;
+    vertical-align: middle;
+}
+}
